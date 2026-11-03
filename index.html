@@ -3,103 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="BIGMK Furniture and More — custom-made and ready-made furniture and home décor in Ghana and Nigeria.">
+<meta name="description" content="BIGMK Furniture and More – luxury custom-made and ready-made furniture and home décor in Ghana and Nigeria.">
 <meta name="theme-color" content="#171512">
-<title>BIGMK Furniture and More | Home Decor</title>
+<title>BIGMK Furniture and More | Luxury Home Decor</title>
 <style>
-:root{--ink:#201c17;--dark:#171512;--gold:#c49a52;--cream:#f5f0e7;--muted:#756e63;--white:#fff}
+:root {
+  --dark:#171512;
+  --black:#100e0c;
+  --gold:#d6a746;
+  --cream:#f5efe5;
+  --muted:#756e63;
+  --green:#159447;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1160px,92%);margin:auto}
-header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #40382d}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:900;letter-spacing:2px;font-size:23px}
-.brand span{display:block;font-size:10px;letter-spacing:3px;color:var(--gold);font-weight:600}
-nav{display:flex;gap:25px;align-items:center;font-size:13px;color:#eee}
-nav a:hover{color:var(--gold)}
-.btn{display:inline-block;background:var(--gold);color:#171512;padding:13px 21px;font-weight:800;border-radius:2px;border:0;cursor:pointer}
-.btn:hover{background:#d9b575}
-.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
-.hero{background:linear-gradient(90deg,rgba(16,14,12,.88),rgba(16,14,12,.34)),url('wardrobe-display.jpeg') center 42%/cover;min-height:570px;display:flex;align-items:center;color:#fff}
-.hero-copy{max-width:650px;padding:80px 0}
-.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:800}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:18px 0}
-.hero p{font-size:18px;color:#eee;max-width:530px;margin:0 0 28px}
-.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
-section{padding:78px 0}
-.section-head{text-align:center;max-width:650px;margin:0 auto 38px}
-.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.15;margin:10px 0}
-.section-head p{color:var(--muted);margin:0}
-.intro{background:var(--cream)}
-.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.intro h2{font-size:38px;line-height:1.15;margin:10px 0}
-.intro p{color:var(--muted)}
-.promise{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
-.promise div{border-left:3px solid var(--gold);padding:8px 14px;font-weight:700}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;box-shadow:0 8px 28px #17151212}
-.card img{width:100%;height:270px;object-fit:cover;display:block}
-.card-body{padding:18px 20px}
-.card h3{margin:0 0 5px;font-size:19px}
-.card p{margin:0;color:var(--muted);font-size:14px}
-.product-btn{display:inline-block;margin-top:14px;background:#1fa855;color:#fff;padding:11px 15px;border-radius:3px;font-size:13px;font-weight:800}
-.product-btn:hover{background:#178744}
-.gallery{background:#f8f6f2}
-.gallery .grid{grid-template-columns:repeat(2,1fr)}
-.gallery .card img{height:350px}
-.gallery .card-body{display:block}
-.gallery .card-body .gold{display:block;margin-top:5px}
-.custom{background:var(--dark);color:#fff;text-align:center}
-.custom p{color:#d6d0c6;max-width:650px;margin:0 auto 25px}
-.custom h2{font-size:clamp(30px,4vw,44px);margin:10px 0}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.step{padding:25px;border:1px solid #e9e3d8}
-.step b{color:var(--gold);font-size:25px}
-.step h3{margin:8px 0}
-.contact{background:var(--cream)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.contact h2{font-size:40px;line-height:1.1;margin:10px 0}
-.contact p{color:var(--muted)}
-.contact-box{background:#fff;padding:28px;box-shadow:0 8px 30px #17151212}
-.contact-box p{margin:8px 0}
-.contact-box .btn{width:100%;text-align:center;margin-top:12px}
-footer{background:var(--dark);color:#ddd;padding:30px 0;font-size:13px}
-.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.gold{color:var(--gold)}
-.whatsapp-float{position:fixed;right:18px;bottom:18px;background:#1fa855;color:#fff;border-radius:30px;padding:13px 18px;font-weight:800;box-shadow:0 5px 20px #0003;z-index:20}
-@media(max-width:760px){
-nav{display:none}
-.hero{min-height:510px;background-position:57% center}
-.hero-copy{padding:65px 0}
-.intro-grid,.contact-grid{grid-template-columns:1fr}
-.grid{grid-template-columns:1fr 1fr}
-.card img{height:210px}
-.gallery .card img{height:230px}
-.steps{grid-template-columns:1fr}
-.promise{grid-template-columns:1fr}
-section{padding:60px 0}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#211e19;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1200px,92%);margin:auto}
+header{
+  background:var(--dark);
+  color:white;
+  border-bottom:2px solid var(--gold);
+  position:sticky;
+  top:0;
+  z-index:100;
 }
-@media(max-width:460px){
-.grid,.gallery .grid{grid-template-columns:1fr}
-.card img,.gallery .card img{height:260px}
-.brand{font-size:20px}
+.nav{
+  min-height:85px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand{
+  font-size:27px;
+  font-weight:900;
+  color:var(--gold);
+  letter-spacing:2px;
+}
+.brand small{
+  display:block;
+  font-size:10px;
+  color:white;
+  letter-spacing:2px;
+}
+nav{display:flex;gap:22px;font-size:14px}
+nav a:hover{color:var(--gold)}
+.btn{
+  display:inline-block;
+  padding:13px 21px;
+  background:var(--gold);
+  color:#171512;
+  font-weight:800;
+  border-radius:30px;
+}
+.btn:hover{background:#edc36e}
+.hero{
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.91),rgba(0,0,0,.30)),
+  url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85') center/cover;
+}
+.hero-copy{max-width:650px;padding:80px 0}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(43px,7vw,76px);line-height:1.04;margin:18px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#eee;max-width:530px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn-outline{
+  background:transparent;
+  color:white;
+  border:1px solid var(--gold);
+}
+section{padding:75px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-head h2{font-size:clamp(30px,4vw,43px);margin:10px 0}
+.section-head p{color:var(--muted)}
+.collection{background:var(--cream)}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:17px;
+}
+.card{
+  background:white;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 7px 25px #00000012;
+}
+.card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  display:block;
+}
+.card-body{padding:15px;text-align:center}
+.card h3{font-size:16px;margin:0 0 5px}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.product-btn{
+  display:block;
+  background:var(--green);
+  color:white;
+  padding:10px 8px;
+  margin-top:13px;
+  border-radius:25px;
+  font-size:12px;
+  font-weight:800;
+}
+.product-btn:hover{background:#107739}
+.why{
+  background:var(--dark);
+  color:white;
+}
+.why-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+.why h2{font-size:36px;color:var(--gold)}
+.why ul{padding:0;list-style:none}
+.why li{margin:14px 0;font-size:16px}
+.check{color:var(--gold);font-weight:bold;margin-right:10px}
+.reviews{background:#f7f2e9}
+.review-box{
+  max-width:750px;
+  margin:auto;
+  padding:30px;
+  background:white;
+  border-left:4px solid var(--gold);
+  border-radius:6px;
+  text-align:center;
+}
+.review-box p{color:var(--muted)}
+.review-box strong{color:#a47b31}
+.gallery{background:white}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.gallery-grid img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.custom{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+}
+.custom h2{font-size:38px}
+.custom p{max-width:650px;margin:0 auto 25px;color:#ddd}
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.step{
+  border:1px solid #e7dfd2;
+  padding:25px;
+  border-radius:7px;
+}
+.step b{font-size:25px;color:var(--gold)}
+.contact{background:var(--cream)}
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+.contact h2{font-size:38px;line-height:1.15}
+.contact-box{
+  background:white;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 7px 25px #00000012;
+}
+.contact-box .btn{
+  display:block;
+  text-align:center;
+  margin-top:18px;
+}
+footer{
+  background:var(--dark);
+  color:white;
+  padding:30px 0;
+  border-top:2px solid var(--gold);
+  font-size:13px;
+}
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.gold{color:var(--gold)}
+.whatsapp-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  background:var(--green);
+  color:white;
+  padding:14px 20px;
+  border-radius:30px;
+  font-weight:800;
+  z-index:200;
+  box-shadow:0 5px 20px #0004;
+}
+@media(max-width:900px){
+  nav{display:none}
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:600px){
+  .hero{min-height:520px}
+  .hero-copy{padding:60px 0}
+  .grid{grid-template-columns:1fr 1fr}
+  .why-grid,.contact-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-grid img{height:250px}
+  .steps{grid-template-columns:1fr}
+  section{padding:55px 0}
+  .brand{font-size:22px}
+}
+@media(max-width:390px){
+  .grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 <header>
 <div class="wrap nav">
-<a class="brand" href="#home">BIGMK <span>FURNITURE AND MORE · HOME DECOR</span></a>
+<a class="brand" href="#home">
+BIGMK
+<small>FURNITURE AND MORE · HOME DECOR</small>
+</a>
 <nav>
 <a href="#home">Home</a>
 <a href="#collection">Collection</a>
 <a href="#gallery">Gallery</a>
 <a href="#custom">Custom Orders</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
-<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20your%20furniture." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+
+Enquire on WhatsApp
+
 </div>
 </header>
 <main>
@@ -107,137 +260,155 @@ section{padding:60px 0}
 <div class="wrap">
 <div class="hero-copy">
 <div class="eyebrow">Made with care. Designed for living.</div>
-<h1>Make your space<br><span class="gold">feel like home.</span></h1>
+<h1>Make your space<br><span>feel like home.</span></h1>
 <p>Discover stylish furniture and home décor from BIGMK. Choose from ready-made pieces or let us create something made for your space.</p>
 <div class="hero-actions">
-<a class="btn" href="#collection">Explore Our Collection</a>
-<a class="btn outline" href="#custom">Request Custom Furniture</a>
+<a class="btn" href="#collection">Explore Our Collection →</a>
+<a class="btn btn-outline" href="#custom">Request Custom Furniture</a>
 </div>
 </div>
 </div>
 </section>
-<section class="intro">
-<div class="wrap intro-grid">
-<div>
-<div class="eyebrow">Welcome to BIGMK</div>
-<h2>Furniture that brings your vision to life.</h2>
-<p>BIGMK Furniture and More – Home Decor creates and offers furniture for comfortable, beautiful living. Whether you have a design in mind or want to choose a ready-made piece, let's make your space yours.</p>
-<div class="promise">
-<div>Custom-made designs</div>
-<div>Ready-made furniture</div>
-<div>Home décor inspiration</div>
-<div>Ghana & Nigeria enquiries</div>
-</div>
-</div>
-<div>
-<img src="bedroom-set.jpeg" alt="Contemporary upholstered bed and bedside furniture" style="width:100%;display:block;max-height:420px;object-fit:cover">
-</div>
-</div>
-</section>
-<section id="collection">
+<section class="collection" id="collection">
 <div class="wrap">
 <div class="section-head">
 <div class="eyebrow">Explore BIGMK</div>
 <h2>Our Furniture Collection</h2>
-<p>Browse a selection of furniture styles. Contact us to confirm availability, sizes, finishes and prices.</p>
+<p>Discover furniture styles for every room. Contact us for prices and availability.</p>
 </div>
 <div class="grid">
 <article class="card">
-<img src="wardrobe-display.jpeg" alt="White wardrobe and shelving unit">
+<img src="wardrobe-display.jpeg" alt="BIGMK wardrobe">
 <div class="card-body">
 <h3>Wardrobes & Storage</h3>
-<p>Practical storage with a clean, modern finish.</p>
-<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20your%20wardrobes%20and%20storage%20furniture." target="_blank" rel="noopener">Enquire about this item</a>
+<p>Stylish storage solutions.</p>
+<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20wardrobes." target="_blank">Enquire on WhatsApp</a>
 </div>
 </article>
 <article class="card">
-<img src="grey-sofa.jpeg" alt="Grey upholstered sofa set">
+<img src="grey-sofa.jpeg" alt="BIGMK sofa">
 <div class="card-body">
 <h3>Sofas & Living Room</h3>
-<p>Comfortable seating to bring your living space together.</p>
-<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20your%20sofas%20and%20living%20room%20furniture." target="_blank" rel="noopener">Enquire about this item</a>
+<p>Comfortable and modern.</p>
+<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20sofas." target="_blank">Enquire on WhatsApp</a>
 </div>
 </article>
 <article class="card">
-<img src="bedroom-set.jpeg" alt="Modern upholstered bed">
+<img src="bedroom-set.jpeg" alt="BIGMK bedroom set">
 <div class="card-body">
 <h3>Beds & Bedroom Sets</h3>
-<p>Give your bedroom a calm, inviting look.</p>
-<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20your%20beds%20and%20bedroom%20sets." target="_blank" rel="noopener">Enquire about this item</a>
+<p>Sleep in luxury.</p>
+<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20bedroom%20sets." target="_blank">Enquire on WhatsApp</a>
 </div>
 </article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=80" alt="Dining table and chairs">
+<div class="card-body">
+<h3>Dining Tables</h3>
+<p>Elegant dining spaces.</p>
+<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20dining%20tables." target="_blank">Enquire on WhatsApp</a>
+</div>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=700&q=80" alt="Modern TV stand and living room">
+<div class="card-body">
+<h3>TV Stands & More</h3>
+<p>Modern and functional.</p>
+<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20TV%20stands." target="_blank">Enquire on WhatsApp</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="why">
+<div class="wrap why-grid">
+<div>
+<div class="eyebrow">The BIGMK Difference</div>
+<h2>Why Choose BIGMK?</h2>
+<ul>
+<li><span class="check">✔</span> Custom-made designs</li>
+<li><span class="check">✔</span> Quality-focused furniture</li>
+<li><span class="check">✔</span> Ready-made options</li>
+<li><span class="check">✔</span> Personalised customer service</li>
+<li><span class="check">✔</span> Ghana and Nigeria enquiries</li>
+</ul>
+</div>
+<div>
+<img src="living-room-sofa.jpeg" alt="BIGMK furniture inspiration" style="width:100%;border-radius:8px;max-height:350px;object-fit:cover">
+</div>
+</div>
+</section>
+<section class="reviews" id="reviews">
+<div class="wrap">
+<div class="section-head">
+<div class="eyebrow">Customer Experience</div>
+<h2>What Our Customers Say</h2>
+<p>We value every customer and every project.</p>
+</div>
+<div class="review-box">
+<h3>Have you bought from BIGMK?</h3>
+<p>We would love to hear about your experience. Your feedback helps us improve and serve you better.</p>
+<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20would%20like%20to%20share%20my%20customer%20feedback." target="_blank">Share Your Feedback</a>
 </div>
 </div>
 </section>
 <section class="gallery" id="gallery">
 <div class="wrap">
 <div class="section-head">
-<div class="eyebrow">A look at the work</div>
+<div class="eyebrow">Furniture Inspiration</div>
 <h2>Selected Gallery</h2>
-<p>Some furniture styles shared with us for the BIGMK website.</p>
+<p>Explore some of the furniture styles featured on BIGMK.</p>
 </div>
-<div class="grid">
-<article class="card">
-<img src="wardrobe-detail.jpeg" alt="White custom wardrobe with wavy mirror frame and drawers">
-<div class="card-body">
-<h3>Wardrobe & Dressing Storage</h3>
-<span class="gold">01</span>
-<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20the%20wardrobe%20and%20dressing%20storage%20design." target="_blank" rel="noopener">Enquire about this item</a>
-</div>
-</article>
-<article class="card">
-<img src="living-room-sofa.jpeg" alt="Rust-coloured sectional sofa in a living room">
-<div class="card-body">
-<h3>Sectional Sofa Inspiration</h3>
-<span class="gold">02</span>
-<a class="product-btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20am%20interested%20in%20the%20sectional%20sofa%20design." target="_blank" rel="noopener">Enquire about this item</a>
-</div>
-</article>
+<div class="gallery-grid">
+<img src="wardrobe-detail.jpeg" alt="Wardrobe and dressing storage">
+<img src="living-room-sofa.jpeg" alt="Sectional sofa">
+<img src="bedroom-set.jpeg" alt="Bedroom furniture">
+<img src="grey-sofa.jpeg" alt="Living room sofa">
 </div>
 </div>
 </section>
 <section class="custom" id="custom">
 <div class="wrap">
-<div class="eyebrow">Your idea. Your style.</div>
+<div class="eyebrow">Your Idea. Your Style.</div>
 <h2>Have a design in mind?</h2>
-<p>Tell us what you need, share a reference photo, and let us discuss a custom-made piece for your home, office or project. Ready-made furniture enquiries are welcome too.</p>
-<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20would%20like%20to%20ask%20about%20a%20custom%20furniture%20order." target="_blank" rel="noopener">Discuss Your Design</a>
+<p>Send us your design, preferred size, colour or reference photo. Let's discuss furniture made for your home, office or project.</p>
+<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20would%20like%20to%20discuss%20a%20custom%20furniture%20order." target="_blank">Discuss Your Design</a>
 </div>
 </section>
 <section>
 <div class="wrap">
 <div class="section-head">
-<div class="eyebrow">Simple process</div>
-<h2>How to order</h2>
+<div class="eyebrow">Simple Process</div>
+<h2>How to Order</h2>
 </div>
 <div class="steps">
-<div class="step"><b>01</b><h3>Choose a style</h3><p>Browse the gallery or send us a photo of the furniture you want.</p></div>
-<div class="step"><b>02</b><h3>Talk to BIGMK</h3><p>Message us with your preferred size, colour, quantity and destination.</p></div>
-<div class="step"><b>03</b><h3>Confirm your order</h3><p>We'll discuss pricing, production or availability, and delivery arrangements with you.</p></div>
+<div class="step"><b>01</b><h3>Choose a style</h3><p>Browse our collection or send a furniture reference photo.</p></div>
+<div class="step"><b>02</b><h3>Talk to BIGMK</h3><p>Tell us your preferred size, colour, quantity and destination.</p></div>
+<div class="step"><b>03</b><h3>Confirm your order</h3><p>Discuss pricing, availability, production and delivery arrangements.</p></div>
 </div>
 </div>
 </section>
 <section class="contact" id="contact">
 <div class="wrap contact-grid">
 <div>
-<div class="eyebrow">Let's talk furniture</div>
+<div class="eyebrow">Let's Talk Furniture</div>
 <h2>Bring your space to life with BIGMK.</h2>
 <p>Contact us for custom furniture, ready-made pieces and home décor enquiries.</p>
-<p><b>Serving enquiries from:</b> Ghana 🇬🇭 and Nigeria 🇳🇬</p>
+<p><strong>Serving enquiries from:</strong><br>Ghana 🇬🇭 and Nigeria 🇳🇬</p>
 </div>
 <div class="contact-box">
 <h3>Contact BIGMK</h3>
-<p><b>WhatsApp / Phone:</b> +233 55 389 7766</p>
-<p><b>Business:</b> BIGMK Furniture and More – Home Decor</p>
-<p><b>Orders:</b> Custom-made & ready-made furniture</p>
-<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20please%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+<p><strong>WhatsApp / Phone:</strong> +233 55 389 7766</p>
+<p><strong>Business:</strong> BIGMK Furniture and More – Home Decor</p>
+<p><strong>Orders:</strong> Custom-made & ready-made furniture</p>
+<a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">Chat on WhatsApp</a>
 </div>
 </div>
 </section>
 </main>
 <footer>
 <div class="wrap foot">
-<div><strong>BIGMK <span class="gold">FURNITURE AND MORE</span></strong><br>HOME DECOR</div>
+<div><strong class="gold">BIGMK</strong><br>FURNITURE AND MORE · HOME DECOR</div>
 <div>Ghana 🇬🇭 · Nigeria 🇳🇬</div>
 <div>© <span id="year"></span> BIGMK. All rights reserved.</div>
 </div>
@@ -246,7 +417,7 @@ section{padding:60px 0}
 WhatsApp
 
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
