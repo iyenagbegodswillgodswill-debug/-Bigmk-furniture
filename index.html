@@ -189,6 +189,17 @@ section{padding:75px 0}
   text-align:center;
   margin-top:18px;
 }
+.email-link{
+  color:#9a7025;
+  font-weight:700;
+  overflow-wrap:anywhere;
+}
+.email-link:hover{text-decoration:underline}
+.email-btn{
+  background:var(--dark);
+  color:white;
+}
+.email-btn:hover{background:#332b20}
 footer{
   background:var(--dark);
   color:white;
@@ -250,9 +261,7 @@ BIGMK
 <a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
-
-Enquire on WhatsApp
-
+<a class="btn" href="https://wa.me/233553897766" target="_blank">Enquire on WhatsApp</a>
 </div>
 </header>
 <main>
@@ -399,9 +408,13 @@ Enquire on WhatsApp
 <div class="contact-box">
 <h3>Contact BIGMK</h3>
 <p><strong>WhatsApp / Phone:</strong> +233 55 389 7766</p>
+<p><strong>Email:</strong><br>
+<a class="email-link" href="mailto:iyenagbegodswillgodswill@gmail.com">iyenagbegodswillgodswill@gmail.com</a>
+</p>
 <p><strong>Business:</strong> BIGMK Furniture and More – Home Decor</p>
 <p><strong>Orders:</strong> Custom-made & ready-made furniture</p>
 <a class="btn" href="https://wa.me/233553897766?text=Hello%20BIGMK%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">Chat on WhatsApp</a>
+<a class="btn email-btn" href="mailto:iyenagbegodswill@gmail.com">Send BIGMK an Email</a>
 </div>
 </div>
 </section>
@@ -413,9 +426,7 @@ Enquire on WhatsApp
 <div>© <span id="year"></span> BIGMK. All rights reserved.</div>
 </div>
 </footer>
-
-WhatsApp
-
+<a class="whatsapp-float" href="https://wa.me/233553897766" target="_blank">WhatsApp</a>
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
